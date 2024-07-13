@@ -1,0 +1,47 @@
+h1,
+p {
+  font-family: Space Grotesk;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+main {
+  background-color: aqua;
+  background-image: url(../images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 390px;
+  height: 200px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+img {
+  position: relative;
+  top: 15px;
+  left: 25px;
+}
+.contianer-datos {
+  background-color: rgba(0, 0, 139, 0);
+  margin: 70px 0px;
+  width: 100%;
+  padding: 0px 0px 5px 0 px;
+}
+.container-datos-info {
+  background-color: rgba(173, 186, 197, 0);
+  display: flex;
+  gap: 200px;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+}
+p {
+  font-size: 12px;
+  background-color: rgba(186, 197, 207, 0);
+}

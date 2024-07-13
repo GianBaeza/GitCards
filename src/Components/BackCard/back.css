@@ -1,0 +1,19 @@
+.container-back {
+  background-image: url(../images//bg-card-back.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contianer-codigo {
+  height: 30px;
+  background-color: rgba(0, 255, 255, 0);
+  text-align: end;
+  padding-right: 25px;
+  width: 70%;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
