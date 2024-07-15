@@ -61,7 +61,7 @@
 /* Estilos para el contenedor de Fecha y CVV */
 .container-fecha-cvv {
   display: flex;
-  justify-content: space-between; /* Espacio entre los campos */
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -73,4 +73,13 @@
 
 .form-group:last-child {
   margin-right: 0;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-input-error {
+  border-color: #e74c3c;
 }
