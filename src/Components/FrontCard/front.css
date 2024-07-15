@@ -6,7 +6,7 @@ p {
   font-size: 25px;
 }
 
-main {
+.front-card {
   background-color: aqua;
   background-image: url(../images/bg-card-front.png);
   background-repeat: no-repeat;
@@ -17,6 +17,8 @@ main {
   border-radius: 10px;
   flex-wrap: wrap;
   overflow: hidden;
+  position: relative;
+  left: 250px;
 }
 img {
   position: relative;
@@ -32,19 +34,21 @@ img {
 .container-datos-info {
   background-color: rgba(19, 77, 128, 0);
   display: flex;
-  gap: 100px;
+  gap: 50px;
   text-align: center;
   justify-content: center;
   width: 100%;
-  margin: auto;
 }
 h1 {
   text-align: center;
   user-select: none;
 }
-p {
+.info {
   font-size: 12px;
   background-color: rgba(172, 184, 196, 0);
   user-select: none;
-  flex-wrap: wrap;
+  padding: 10px;
+  width: auto;
+  margin: auto;
+  width: 50%;
 }

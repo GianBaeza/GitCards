@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 
 export const formContext = createContext();
 
-export default function FormContextProvider({ children }) {
+export function FormContextProvider({ children }) {
   const [formData, setFormData] = useState({
     cardNumber: "",
     cardName: "",
@@ -15,18 +15,14 @@ export default function FormContextProvider({ children }) {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleCardNumberChange = (e) => {
-    const { name, value } = e.target;
+  const handleCardNumberChange = (event) => {
+    const { name, value } = event.target;
     const formattedValue = value
       .replace(/\D/g, "")
       .replace(/(\d{4})(?=\d)/g, "$1 ");
-
     handleCardChange({
       target: { name, value: formattedValue },
     });
-  };
-  const onSubmit = (data) => {
-    console.log(data);
   };
 
   return (
@@ -34,8 +30,7 @@ export default function FormContextProvider({ children }) {
       value={{
         formData,
         handleCardChange,
-        onSubmit,
-        handleCardNumberChange
+        handleCardNumberChange,
       }}
     >
       {children}

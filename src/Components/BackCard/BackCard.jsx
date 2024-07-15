@@ -1,14 +1,17 @@
-import { useContext } from "react";
-import "../BackCard/back.css";
+import React, { useContext } from "react";
 import { formContext } from "../Context/Context";
+import "../BackCard/back.css";
+
 function BackCard() {
   const { formData } = useContext(formContext);
+  const { cvv } = formData;
+
   return (
-    <main className="container-back">
-      <div className="contianer-codigo">
-        <p>{formData.cvv || "000"}</p>
+    <div className="back-card">
+      <div className="cvv-container">
+        <p>{cvv || "CVV"}</p>
       </div>
-    </main>
+    </div>
   );
 }
 
